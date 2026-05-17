@@ -57,4 +57,5 @@ docker compose down
 # Force delete orphaned network/volume cache mappings
 docker volume prune -f
 
+
 <img width="1280" height="698" alt="web_app docker diagram" src="https://github.com/user-attachments/assets/4303f589-a32b-4e66-a2fc-2130aa9e73a1" />
