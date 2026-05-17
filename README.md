@@ -26,6 +26,8 @@ The project implements a modern **Three-Tier Microservices Architecture**:
 
 ---
 
+<img width="1280" height="698" alt="web_app docker diagram" src="https://github.com/user-attachments/assets/4303f589-a32b-4e66-a2fc-2130aa9e73a1" />
+
 ## 📂 Project Directory Structure
 
 ```text
@@ -58,4 +60,4 @@ docker compose down
 docker volume prune -f
 
 
-<img width="1280" height="698" alt="web_app docker diagram" src="https://github.com/user-attachments/assets/4303f589-a32b-4e66-a2fc-2130aa9e73a1" />
+
