@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        input {
+            display: block;
+            width: 90%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>User Profile Setup</h2>
+        <input type="text" id="name-input" placeholder="Enter Name">
+        <input type="email" id="email-input" placeholder="Enter Email">
+        <button onclick="updateProfile()">Save Profile</button>
+    </div>
+
+    <script>
+        async function updateProfile() {
+            const name = document.getElementById('name-input').value;
+            const email = document.getElementById('email-input').value;
+
+            const response = await fetch('/update-profile', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: name, email: email })
+            });
+
+            const data = await response.json();
+            alert('Profile Saved into MongoDB: ' + JSON.stringify(data));
+        }
+    </script>
+</body>
+
+</html>
