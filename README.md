@@ -26,7 +26,8 @@ The project implements a modern **Three-Tier Microservices Architecture**:
 
 ---
 
-<img width="1280" height="698" alt="web_app docker diagram" src="https://github.com/user-attachments/assets/4303f589-a32b-4e66-a2fc-2130aa9e73a1" />
+<img width="582" height="410" alt="Multi tier docker diagram drawio" src="https://github.com/user-attachments/assets/91beb799-97cc-4381-8ed9-c19b0bfb2a0d" />
+
 
 ## 📂 Project Directory Structure
 
